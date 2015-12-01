@@ -1,4 +1,4 @@
-Copyright (c) 2009, Yi Cao
+Copyright (c) 2009, Mike Wu
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
