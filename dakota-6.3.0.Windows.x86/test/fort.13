@@ -1,0 +1,41 @@
+--------------------------------- Log file --------------------------------
+DIRECT Version 2.0.4
+ Problem Dimension n                    :      4
+ Eps value                              :   0.1000E-03
+ Maximum number of f-evaluations (maxf) :   1000
+ Maximum number of iterations (MaxT)    :    100
+ Value of f_global                      :  -0.1798+309
+ Global percentage wanted               :   0.0000E+00
+ Volume percentage wanted               :   0.1000E-05
+ Measure percentage wanted              :   0.1000E-03
+ Epsilon is constant.
+ Our modification of the DIRECT algorithm is used.
+Bounds on variable x 1    :      0.50000 <= xi <=      5.80000
+Bounds on variable x 2    :     -2.90000 <= xi <=      2.90000
+Bounds on variable x 3    :      0.00000 <= xi <=      5.00000
+Bounds on variable x 4    :     -3.00000 <= xi <=      3.00000
+---------------------------------------------------------------------------
+ Iteration   # of f-eval.   fmin
+    1           9           7.0840926698
+    2          15           2.0223642747
+    3          19           1.7811988426
+    5          31           0.7935445216
+    6          41           0.0416749895
+    7          47           0.0218676431
+    9          63           0.0096743799
+   10          73           0.0027394509
+   11          83           0.0009541349
+   12          89           0.0001826476
+   13         105           0.0000321135
+   14         119           0.0000020067
+   16         157           0.0000001482
+DIRECT stopped: Volume of S_min is 0.77D-06% < 0.10D-05% of the original volume.
+--------------------------------- Summary --------------------------------
+Final function value           :    0.0000001
+Number of function evaluations :          157
+Index  Final solution   x(i) - l(i)   u(i) - x(i) 
+    1    0.9907407       0.4907407      4.8092593
+    2    1.0024691       3.9024691      1.8975309
+    3    1.0185185       1.0185185      3.9814815
+    4    1.0123457       4.0123457      1.9876543
+---------------------------------------------------------------------------

@@ -1,0 +1,20 @@
+optpp_q_newton//1/"Best Continuous Variables"
+  Array Spans: "Best Sets"
+  Row Labels: "x1" "x2"
+  Data (vector<vector<double>>):
+      Array Entry 1:
+                     1.0013529993e+000
+                     1.0026805414e+000
+optpp_q_newton//1/"Best Functions"
+  Array Spans: "Best Sets"
+  Row Labels: "obj_fn"
+  Data (vector<vector<double>>):
+      Array Entry 1:
+                     1.9050696338e-006
+optpp_q_newton//1/"Continuous Variable Labels"
+  Data (vector<string>):
+      "x1" "x2"
+optpp_q_newton//1/"Function Labels"
+  Data (vector<string>):
+      "obj_fn"
+

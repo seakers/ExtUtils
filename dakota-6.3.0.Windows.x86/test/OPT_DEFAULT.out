@@ -1,0 +1,102 @@
+**********************************************************
+OPT++ version 2.4
+Job run at Sun Jan 03 04:14:49 2016
+
+**********************************************************
+readOptInput: No opt.input file found
+readOptInput: default values will be used
+
+
+=========  Initial state  ===========
+
+
+    i	    xc 		 grad  		 fcn_accrcy 
+     0-0x1.3333p+0	-0x1.af33p+7	0x1.0000p-52
+     1 0x1.0000p+0	-0x1.6000p+6	0x1.0000p-52
+Function Value     =  0x1.8333p+4
+Norm of gradient   =  0x1.d1bcp+7
+
+
+==============================================
+
+
+		Bound constrained Quasi-Newton Method with Line Search
+
+  Iter      F(x)       ||grad||     ||step||      f/g
+
+    0  0x1.8333p+4  0x1.d1bcp+7
+    1  0x1.3340p+4  0x1.d646p+7  0x1.52b7p+1  N     2     2
+OptBCNewtonLike : variable added to working set : 1
+OptBCNewtonLike: Current working set  
+ ----- variable index:      1	2
+     2  0x1.1875p+1  0x1.4a8cp+6  0x1.ccebp-4  B     4     3
+OptBCNewtonLike: Current working set  
+ ----- variable index:      1	2
+     3  0x1.0f7bp-2  0x1.2670p+4  0x1.fb81p-5  N     5     4
+OptBCNewtonLike: Current working set  
+ ----- variable index:      1	2
+     4  0x1.5f8bp-3  0x1.2834p+0  0x1.7531p-7  N     6     5
+OptBCNewtonLike: Current working set  
+ ----- variable index:      1	2
+     5  0x1.5ef1p-3  0x1.2fd6p-2 0x1.3993p-11  N     7     6
+OptBCNewtonLike: Current working set  
+ ----- variable index:      1	2
+     6  0x1.5ef1p-3  0x1.2ba8p-2 0x1.cc8dp-18  N     8     7
+checkConvg: deltaf = 0x1.4349p-25  ftol = 0x1.a36ep-14
+OptBCNewtonLike : reduced_grad_norm = 7.04203e-006
+OptBCNewtonLike : variable deleted from working set : 1
+    7  0x1.af3bp-4  0x1.79f5p+2  0x1.3dcdp-2  N     9     8
+    8  0x1.8ed0p-4  0x1.7e58p+3  0x1.fe62p-3  N    10     9
+    9  0x1.c69bp-5  0x1.5494p+1  0x1.498fp-5  N    11    10
+   10  0x1.20afp-5  0x1.629cp+0  0x1.dc0ap-4  N    12    11
+   11  0x1.1ee0p-5  0x1.07c6p+3  0x1.2467p-2  N    13    12
+   12  0x1.0a5ep-6  0x1.03f0p-3  0x1.1bbfp-3  N    14    13
+   13  0x1.4c94p-7  0x1.427dp-1  0x1.140bp-4  N    15    14
+   14  0x1.52dfp-8  0x1.c58dp+0  0x1.7976p-4  B    17    15
+   15  0x1.5fc2p-9  0x1.b0dfp+0  0x1.d5a4p-5  N    18    16
+   16 0x1.d25bp-12  0x1.8c00p-3  0x1.2b4ep-5  N    19    17
+   17 0x1.147ap-14  0x1.3ee6p-2  0x1.304dp-5  N    20    18
+   18 0x1.ff63p-20  0x1.e148p-7  0x1.a872p-8  N    21    19
+checkConvg: deltaf = 0x1.0c7dp-14  ftol = 0x1.a36ep-14
+OptBCNewtonLike : reduced_grad_norm = 0.0146875
+OptBCNewtonLike : convergence achieved. 
+
+
+=========  Solution from Opt++  ===========
+
+Optimization method       = Bound constrained Quasi-Newton
+Dimension of the problem  = 2
+No. of bound constraints  = 2
+Return code               = 2 (Algorithm converged - Difference in successive fcn values less than tolerance)
+No. iterations taken      = 18
+No. function evaluations  = 21
+No. gradient evaluations  = 19
+
+
+=========  Solution from Opt++  ===========
+
+
+    i	    xc 		 grad  		 fcn_accrcy 
+     0 0x1.0059p+0	 0x1.bed2p-7	0x1.0000p-52
+     1 0x1.00b0p+0	-0x1.65abp-8	0x1.0000p-52
+Function Value     = 0x1.ff63p-20
+Norm of gradient   =  0x1.e148p-7
+
+
+==============================================
+
+
+
+==========  Tolerances  ===========
+
+Machine Epsilon      = 2.22045e-016
+Maximum Step         = 1000
+Minimum Step         = 1.49012e-008
+Maximum Iter         = 50
+Maximum Backtracks   = 5
+Maximum Fcn Eval     = 1000
+Step Tolerance       = 1.49012e-008
+Function Tolerance   = 0.0001
+Constraint Tolerance = 1.49012e-008
+Gradient Tolerance   = 0.0001
+LineSearch Tolerance = 0.0001

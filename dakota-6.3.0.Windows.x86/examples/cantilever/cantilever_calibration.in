@@ -1,0 +1,36 @@
+
+environment
+    tabular_data
+    graphics
+
+method
+  nl2sol
+    convergence_tolerance 1.0e-6
+  output verbose
+
+model
+  single
+
+variables
+  active design
+  continuous_design 3
+    upper_bounds 31000000 10 10
+    initial_point 29000000 4 4
+    lower_bounds 27000000 1 1
+    descriptors 'E' 'w' 't'
+  continuous_state 3
+    initial_state 40000 500 1000
+    descriptors 'R' 'X' 'Y'
+
+interface
+  direct
+    analysis_driver = 'mod_cantilever'
+
+responses
+  calibration_terms 3
+    calibration_data_file = 'dakota_cantilever_examples.clean.dat'
+    #calibration_data_file = 'dakota_cantilever_examples.error.dat'
+    freeform
+  descriptors = 'area' 'stress' 'displacement'
+  analytic_gradients
+  no_hessians

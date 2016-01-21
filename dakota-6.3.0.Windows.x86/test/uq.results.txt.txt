@@ -1,0 +1,96 @@
+polynomial_chaos//1/"Continuous Variable Labels"
+  Data (vector<string>):
+      "x1" "x2"
+polynomial_chaos//1/"Function Labels"
+  Data (vector<string>):
+      "response_fn_1"
+polynomial_chaos//1/"Moments: Central: Expansion"
+  Column Labels: "response_fn_1"
+  Row Labels: "Mean" "Variance" "3rdCentral" "4thCentral"
+  Data (RealMatrix):
+   4.5566666667e+002 
+   3.6791532698e+005 
+   1.#QNAN00000e+000 
+   1.#QNAN00000e+000 
+polynomial_chaos//1/"Moments: Central: Numerical"
+  Column Labels: "response_fn_1"
+  Row Labels: "Mean" "Variance" "3rdCentral" "4thCentral"
+  Data (RealMatrix):
+   4.5566666667e+002 
+   3.6791532698e+005 
+   4.3814191050e+008 
+   8.6135868898e+011 
+polynomial_chaos//1/"PCE Coefficient Labels"
+  Array Spans: "Response Functions"
+  Data (vector<vector<string>>):
+      Array Entry 1:
+      "P0 P0"
+      "P1 P0"
+      "P2 P0"
+      "P3 P0"
+      "P4 P0"
+      "P0 P1"
+      "P1 P1"
+      "P2 P1"
+      "P3 P1"
+      "P4 P1"
+      "P0 P2"
+      "P1 P2"
+      "P2 P2"
+      "P3 P2"
+      "P4 P2"
+
+polynomial_chaos//1/"PCE Coefficients: Standardized"
+  Array Spans: "Response Functions"
+  Data (vector<vector<double>>):
+      Array Entry 1:
+                     4.5566666667e+002
+                     -4.0000000000e+000
+                     9.1695238095e+002
+                     -5.5955240441e-014
+                     3.6571428571e+002
+                     -5.3333333333e+002
+                     -4.7961634664e-014
+                     -1.0666666667e+003
+                     -8.3932860662e-014
+                     1.1151080059e-012
+                     2.6666666667e+002
+                     6.6613381478e-014
+                     2.2204460493e-013
+                     7.7715611724e-015
+                     -4.9960036108e-013
+polynomial_chaos//1/"PDF Histograms"
+  Array Spans: "Response Functions"
+  Row Labels: "Bin Lower" "Bin Upper" "Density Value"
+  Data (vector<RealMatrix>):
+      Array Entry 1:
+   6.8311107121e-003 1.0000000000e-001 1.0000000000e+000 5.0000000000e+001 1.0000000000e+002 5.0000000000e+002 1.0000000000e+003 
+   1.0000000000e-001 1.0000000000e+000 5.0000000000e+001 1.0000000000e+002 5.0000000000e+002 1.0000000000e+003 3.5755437782e+003 
+   2.0393073423e-002 1.3000000000e-002 4.7000000000e-003 1.9680000000e-003 9.2150000000e-004 2.8300000000e-004 5.7308286215e-005 
+polynomial_chaos//1/"Response to Probability Mapping"
+  Array Spans: "Response Functions"
+  Column Labels: "Response Level" "Probability Level"
+  Data (vector<RealMatrix>):
+      Array Entry 1:
+   1.0000000000e-001 1.9000000000e-003 
+   1.0000000000e+000 1.3600000000e-002 
+   5.0000000000e+001 2.4390000000e-001 
+   1.0000000000e+002 3.4230000000e-001 
+   5.0000000000e+002 7.1090000000e-001 
+   1.0000000000e+003 8.5240000000e-001 
+random_sampling/NO_SPECIFICATION/1/"Extreme Values"
+  Column Labels: "response_fn_1"
+  Row Labels: "Min" "Max"
+Warning: unknown type of any: class std::vector<struct std::pair<double,double>,class std::allocator<struct std::pair<double,double> > >
+random_sampling/NO_SPECIFICATION/1/"Response to Probability Mapping"
+  Array Spans: "Response Functions"
+  Column Labels: "Response Level" "Probability Level"
+  Data (vector<RealMatrix>):
+      Array Entry 1:
+   1.0000000000e-001 1.9000000000e-003 
+   1.0000000000e+000 1.3600000000e-002 
+   5.0000000000e+001 2.4390000000e-001 
+   1.0000000000e+002 3.4230000000e-001 
+   5.0000000000e+002 7.1090000000e-001 
+   1.0000000000e+003 8.5240000000e-001 
+
