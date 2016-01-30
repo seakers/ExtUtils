@@ -50,10 +50,12 @@ G= C+C';
 G=G.*dist;
 
 % graph is undirected, so we can forget half of edges
-G=tril(G);
+% G=tril(G); %removed when running kruskal instead of graphminspantree
 
 % compute minimal spanning tree on graph
-[G] = graphminspantree(G,'method','kruskal');
+% [G] = graphminspantree(G,'method','kruskal'); % bioinformatics toolbox
+[~,MSTedges,~]=kruskal(G>0,G);
+G=sparse(MSTedges(:,1),MSTedges(:,2),G(sub2ind(size(G),MSTedges(:,1),MSTedges(:,2))),N,N);
 
 if (options.show==1)
 	fig=figure();
