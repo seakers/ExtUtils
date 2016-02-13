@@ -40,7 +40,7 @@ end
 
 E = edges(DT);
 nEdges=size(E,1);
-dist = dist_euclidean(data,data);
+dist =sqrt( dist_euclidean(data,data) );
 
 %create sparse matrix - graph representation
 C=sparse(E(:,1),E(:,2),ones(nEdges,1),N,N,nEdges);
