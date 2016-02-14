@@ -40,7 +40,7 @@ end
 
 E = edges(DT);
 nEdges=size(E,1);
-dist =sqrt( dist_euclidean(data,data) );
+dist = dist_euclidean(data,data);
 
 %create sparse matrix - graph representation
 C=sparse(E(:,1),E(:,2),ones(nEdges,1),N,N,nEdges);
@@ -48,6 +48,7 @@ connect=C;
 G= C+C';
 % weight graph by distances
 G=G.*dist;
+dist=sqrt(dist); % leave G without sqrt for now for numeric accuracy. Equivalent for Kruskal.
 
 % graph is undirected, so we can forget half of edges
 % G=tril(G); %removed when running kruskal instead of graphminspantree
@@ -56,6 +57,7 @@ G=G.*dist;
 % [G] = graphminspantree(G,'method','kruskal'); % bioinformatics toolbox
 [~,MSTedges,~]=kruskal(G>0,G);
 G=sparse(MSTedges(:,1),MSTedges(:,2),G(sub2ind(size(G),MSTedges(:,1),MSTedges(:,2))),N,N);
+G=sqrt(G); % correct by sqrting G.
 
 if (options.show==1)
 	fig=figure();

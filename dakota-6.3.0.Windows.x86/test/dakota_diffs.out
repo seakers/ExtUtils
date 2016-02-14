@@ -254,3 +254,515 @@ PASS test 1
 PASS test 2
 PASS test 3
 PASS test 4
+dakota_4level.in
+PASS test 0
+dakota_big_dataset.in
+PASS test 0
+dakota_coliny_p.in
+PASS test 0
+dakota_graphics1.in
+PASS test 0
+dakota_lib_mode.in
+PASS test 0
+PASS test 1
+PASS test 2
+PASS test 3
+dakota_lib_split.in
+PASS test 0
+dakota_multistart_ie.in
+PASS test 0
+dakota_mv.in
+PASS test 0
+PASS test 1
+PASS test 2
+PASS test 3
+PASS test 4
+dakota_ncsu_textbook.in
+PASS test 0
+dakota_nonlinear_cg.in
+PASS test 0
+dakota_rbdo_steel_column_analytic2_verify.in
+PASS test 0
+PASS test 1
+PASS test 2
+PASS test 3
+dakota_repartition.in
+PASS test 0
+PASS test 1
+dakota_resultsdb.in
+PASS test 0
+PASS test 1
+PASS test 2
+dakota_richardson.in
+PASS test 0
+PASS test 1
+PASS test 2
+dakota_textbook_increment.in
+PASS test 0
+PASS test 1
+DIFF test 2
+base< Simple Rank Correlation Matrix among all inputs and outputs:
+base<                      TF1n         TF2n         TF1u         TF2u         TF1e       biuv_1      hpiuv_1      hpiuv_2      dusiv_1      dusrv_1      dusrv_2 response_fn_1 
+base<       biuv_1 -8.23137e-03 -1.11457e-01  5.40601e-02  4.22692e-03  1.44828e-01  1.00000e+00 
+base<      hpiuv_1 -4.07119e-02  5.93993e-02 -1.29255e-01  1.09010e-02  1.58621e-01 -4.47164e-02  1.00000e+00 
+base<      hpiuv_2 -2.44716e-03  7.49722e-02 -2.33593e-02  5.13904e-02 -9.58843e-02  6.02892e-02 -2.24917e-01  1.00000e+00 
+base<      dusiv_1  1.75751e-02  7.76418e-02 -4.24917e-02 -5.36151e-02 -2.00222e-03 -9.58843e-02 -4.73860e-02  1.97998e-02  1.00000e+00 
+base<      dusrv_1 -2.20245e-02 -7.18576e-02 -1.16796e-01 -1.18576e-01 -4.02670e-02  7.27475e-02 -4.20467e-02 -5.13904e-02  3.75973e-02  1.00000e+00 
+base<      dusrv_2 -3.18131e-02  2.44716e-03 -7.40823e-02 -1.23915e-01 -6.69633e-02  4.87208e-02 -1.87097e-01  8.43159e-02 -3.91324e-01  2.89433e-01  1.00000e+00 
+base< response_fn_1 -6.00667e-03  8.87653e-02 -1.49055e-02 -6.20690e-02 -3.00334e-02 -9.27697e-02 -7.45273e-02  6.20690e-02  9.92881e-01  4.29366e-02 -3.68187e-01  1.00000e+00 
+base< Partial Rank Correlation Matrix between input and output:
+base<              response_fn_1 
+base<         TF1n -2.17286e-01 
+base<         TF2n  9.05828e-02 
+base<         TF1u  2.89052e-01 
+base<         TF2u -4.17050e-02 
+base<         TF1e -2.32957e-01 
+base<       biuv_1  1.96428e-02 
+base<      hpiuv_1 -8.52939e-02 
+base<      hpiuv_2  3.35599e-01 
+base<      dusiv_1  9.93705e-01 
+base<      dusrv_1  4.18619e-02 
+base<      dusrv_2  1.30852e-01 
+---
+test> Simple Rank Correlation Matrix among all inputs and outputs:
+test>                      TF1n         TF2n         TF1u         TF2u         TF1e       biuv_1      hpiuv_1      hpiuv_2      dusiv_1      dusrv_1      dusrv_2 response_fn_1 
+test>       biuv_1 -1.40156e-002 4.29366e-002 5.85095e-002 7.67519e-002 1.10122e-001 1.00000e+000 
+test>      hpiuv_1 1.13459e-002 2.03115e-001 1.93548e-002 7.58621e-002 2.12013e-001 1.45717e-001 1.00000e+000 
+test>      hpiuv_2 -2.44716e-003 9.27697e-002 5.89544e-002 2.29143e-002 -7.14127e-002 1.57286e-001 -5.09455e-002 1.00000e+000 
+test>      dusiv_1 8.23137e-003 7.80868e-002 -4.64961e-002 -5.09455e-002 -5.11680e-003 -1.04561e-002 2.86986e-002 2.33593e-002 1.00000e+000 
+test>      dusrv_1 8.12013e-002 1.40378e-001 2.42492e-002 -7.85317e-002 6.00667e-003 1.34594e-001 -2.89210e-003 1.82647e-001 1.62180e-001 1.00000e+000 
+test>      dusrv_2 1.69299e-001 3.42380e-001 7.63070e-002 2.86986e-002 7.45273e-002 2.77419e-001 1.48387e-001 2.82759e-001 1.66852e-002 3.16129e-001 1.00000e+000 
+test> response_fn_1 -6.00667e-003 8.87653e-002 -1.49055e-002 -6.20690e-002 -3.00334e-002 1.17909e-002 2.20245e-002 6.69633e-002 9.93326e-001 1.98665e-001 4.24917e-002 1.00000e+000 
+test> Partial Rank Correlation Matrix between input and output:
+test>              response_fn_1 
+test>         TF1n -1.71078e-001 
+test>         TF2n 2.06579e-002 
+test>         TF1u 3.00440e-001 
+test>         TF2u -8.74152e-002 
+test>         TF1e -2.69753e-001 
+test>       biuv_1 1.35174e-001 
+test>      hpiuv_1 -2.26027e-002 
+test>      hpiuv_2 3.00162e-001 
+test>      dusiv_1 9.95536e-001 
+test>      dusrv_1 2.75213e-001 
+test>      dusrv_2 6.22931e-002 
+DIFF test 3
+base< Simple Correlation Matrix among all inputs and outputs:
+base<                      TF1n         TF2n         TF1u         TF2u         TF1e       biuv_1      hpiuv_1      hpiuv_2      dusiv_1      dusrv_1      dusrv_2 response_fn_1 
+base<       biuv_1  3.07976e-02  2.36154e-03  4.75038e-02  2.18789e-03  7.56903e-03  1.00000e+00 
+base<      hpiuv_1  9.35287e-03  3.73872e-02 -3.31556e-02 -2.54068e-02  1.01078e-01 -6.56355e-02  1.00000e+00 
+base<      hpiuv_2  1.60788e-02  5.00360e-02  4.19106e-02  1.62414e-02  6.74884e-02  6.68882e-02 -1.44113e-01  1.00000e+00 
+base<      dusiv_1  6.01057e-03  2.57498e-03 -5.73842e-02 -1.42128e-02  4.27007e-02 -2.17881e-02 -5.07154e-02 -4.37049e-02  1.00000e+00 
+base<      dusrv_1 -5.72963e-02  5.64387e-02 -8.74278e-02 -1.26836e-01  1.05836e-01  1.18163e-01 -1.63663e-02  1.05576e-01  1.77743e-02  1.00000e+00 
+base<      dusrv_2  1.72914e-03  6.27480e-02  1.28711e-02 -1.17424e-02 -1.05999e-02  1.33978e-02 -8.16497e-02  5.04291e-02 -3.76445e-02  2.13809e-01  1.00000e+00 
+base< response_fn_1  4.80170e-02  6.66617e-02 -1.11024e-01 -3.50233e-02 -8.17212e-02 -1.52897e-02 -1.79897e-03 -5.94312e-02  8.82325e-01 -1.35670e-02 -4.36460e-02  1.00000e+00 
+base< Partial Correlation Matrix between input and output:
+base<              response_fn_1 
+base<         TF1n  1.13225e-01 
+base<         TF2n  1.41665e-01 
+base<         TF1u -1.23297e-01 
+base<         TF2u -3.65518e-02 
+base<         TF1e -2.59259e-01 
+base<       biuv_1  2.74891e-02 
+base<      hpiuv_1  1.08929e-01 
+base<      hpiuv_2 -1.07708e-02 
+base<      dusiv_1  8.94197e-01 
+base<      dusrv_1 -4.89358e-02 
+base<      dusrv_2 -1.33908e-02 
+base< Simple Rank Correlation Matrix among all inputs and outputs:
+base<                      TF1n         TF2n         TF1u         TF2u         TF1e       biuv_1      hpiuv_1      hpiuv_2      dusiv_1      dusrv_1      dusrv_2 response_fn_1 
+base<       biuv_1  7.32981e-02  3.72326e-03  1.16699e-01  2.78411e-02  6.00167e-03  1.00000e+00 
+base<      hpiuv_1 -3.88997e-03  5.97944e-02 -7.17977e-02 -5.31814e-02  1.14087e-01 -8.65240e-02  1.00000e+00 
+base<      hpiuv_2 -1.56154e-02 -7.22423e-04  1.37260e-02  1.53376e-02  4.27897e-03  1.23034e-01 -1.97166e-01  1.00000e+00 
+base<      dusiv_1  9.39150e-03  3.92331e-02 -5.26813e-02 -1.51153e-02 -2.87302e-02 -8.58572e-02 -8.28563e-02 -6.39622e-02  1.00000e+00 
+base<      dusrv_1 -7.57433e-02 -3.70103e-02 -8.93582e-02 -5.35704e-02 -5.04585e-02  1.21200e-01  5.91275e-02  1.30481e-01 -3.00083e-02  1.00000e+00 
+base<      dusrv_2  7.14643e-02  5.81273e-02 -4.32898e-02  2.48402e-02 -6.22395e-03  1.23368e-02  8.05224e-02  3.11198e-02 -5.89053e-03  9.00806e-02  1.00000e+00 
+base< response_fn_1  1.75604e-02  8.40789e-02 -4.72353e-02 -2.75076e-02 -1.55043e-02 -3.75104e-02 -7.65213e-02  3.15643e-02  9.77160e-01  9.44707e-03  4.10670e-02  1.00000e+00 
+base< Partial Rank Correlation Matrix between input and output:
+base<              response_fn_1 
+base<         TF1n  3.98361e-02 
+base<         TF2n  2.38972e-01 
+base<         TF1u  1.62281e-02 
+base<         TF2u -7.61223e-02 
+base<         TF1e  6.46837e-02 
+base<       biuv_1  1.86035e-01 
+base<      hpiuv_1  9.48063e-02 
+base<      hpiuv_2  4.47637e-01 
+base<      dusiv_1  9.84499e-01 
+base<      dusrv_1  1.15885e-01 
+base<      dusrv_2  2.10716e-01 
+---
+test> Simple Correlation Matrix among all inputs and outputs:
+test>                      TF1n         TF2n         TF1u         TF2u         TF1e       biuv_1      hpiuv_1      hpiuv_2      dusiv_1      dusrv_1      dusrv_2 response_fn_1 
+test>       biuv_1 1.85922e-002 2.52860e-002 1.87587e-002 -3.25148e-002 3.30728e-002 1.00000e+000 
+test>      hpiuv_1 9.35287e-003 3.73872e-002 -3.31556e-002 -2.54068e-002 1.01078e-001 -8.24226e-002 1.00000e+000 
+test>      hpiuv_2 3.61109e-003 5.19066e-002 6.01498e-002 1.05258e-002 5.80989e-002 9.50119e-002 -1.64677e-001 1.00000e+000 
+test>      dusiv_1 7.69095e-003 2.64861e-003 -6.03774e-002 -1.61482e-002 4.21493e-002 -1.62939e-002 -5.25107e-002 -2.86125e-002 1.00000e+000 
+test>      dusrv_1 -5.72963e-002 5.64387e-002 -8.74278e-002 -1.26836e-001 1.05836e-001 1.51083e-001 -1.63663e-002 8.75929e-002 1.55031e-002 1.00000e+000 
+test>      dusrv_2 1.72914e-003 6.27480e-002 1.28711e-002 -1.17424e-002 -1.05999e-002 2.69191e-002 -8.16497e-002 5.04219e-002 -3.90917e-002 2.13809e-001 1.00000e+000 
+test> response_fn_1 4.93224e-002 6.35235e-002 -1.09742e-001 -3.15019e-002 -7.98539e-002 -2.70184e-002 -3.59213e-003 -4.11144e-002 8.83252e-001 -1.67003e-002 -4.26224e-002 1.00000e+000 
+test> Partial Correlation Matrix between input and output:
+test>              response_fn_1 
+test>         TF1n 1.13561e-001 
+test>         TF2n 1.34043e-001 
+test>         TF1u -1.13337e-001 
+test>         TF2u -2.49822e-002 
+test>         TF1e -2.56467e-001 
+test>       biuv_1 -6.84029e-003 
+test>      hpiuv_1 1.08996e-001 
+test>      hpiuv_2 3.86041e-003 
+test>      dusiv_1 8.94438e-001 
+test>      dusrv_1 -4.73603e-002 
+test>      dusrv_2 -8.20108e-003 
+test> Simple Rank Correlation Matrix among all inputs and outputs:
+test>                      TF1n         TF2n         TF1u         TF2u         TF1e       biuv_1      hpiuv_1      hpiuv_2      dusiv_1      dusrv_1      dusrv_2 response_fn_1 
+test>       biuv_1 5.82384e-002 2.65074e-002 2.35065e-002 -5.26813e-002 -1.59489e-002 1.00000e+000 
+test>      hpiuv_1 -2.88969e-003 2.98416e-002 9.44707e-004 -3.78438e-002 1.78883e-001 -6.85190e-002 1.00000e+000 
+test>      hpiuv_2 -4.33454e-003 2.55627e-003 4.42345e-002 3.00083e-002 1.44485e-002 1.95610e-001 -4.82912e-002 1.00000e+000 
+test>      dusiv_1 1.10031e-002 3.81773e-002 -5.34593e-002 -7.94665e-003 -3.17866e-002 6.05724e-003 -6.45179e-002 -2.23395e-002 1.00000e+000 
+test>      dusrv_1 -9.44707e-003 7.04084e-002 -2.09503e-002 -1.65713e-001 8.76910e-002 1.96443e-001 -4.32898e-002 1.74993e-001 -2.43401e-002 1.00000e+000 
+test>      dusrv_2 -5.05696e-003 1.06974e-001 -5.69047e-002 -7.66324e-002 -5.72381e-002 5.71826e-002 -1.20478e-001 8.52459e-002 -2.05613e-003 1.73604e-001 1.00000e+000 
+test> response_fn_1 2.38400e-002 8.99694e-002 -5.01250e-002 -2.81189e-002 -1.47819e-002 6.84079e-002 -5.79605e-002 7.03529e-002 9.77883e-001 2.45068e-002 2.38400e-002 1.00000e+000 
+test> Partial Rank Correlation Matrix between input and output:
+test>              response_fn_1 
+test>         TF1n 7.16151e-002 
+test>         TF2n 2.73428e-001 
+test>         TF1u -1.87617e-002 
+test>         TF2u -9.40641e-002 
+test>         TF1e 7.27978e-002 
+test>       biuv_1 2.22637e-001 
+test>      hpiuv_1 5.30051e-002 
+test>      hpiuv_2 4.16497e-001 
+test>      dusiv_1 9.84884e-001 
+test>      dusrv_1 9.68759e-002 
+test>      dusrv_2 4.93082e-002 
+DIFF test 4
+base< Simple Rank Correlation Matrix among all inputs and outputs:
+base<                      TF1u         TF2u      dussv_1 response_fn_1 
+base<      dussv_1 -6.89655e-03 -1.55061e-01  1.00000e+00 
+base< response_fn_1  6.13793e-01  6.70300e-01  1.10122e-01  1.00000e+00 
+base< Partial Rank Correlation Matrix between input and output:
+base<              response_fn_1 
+base<         TF1u  8.26364e-01 
+base<         TF2u  8.59182e-01 
+base<      dussv_1  4.77046e-01 
+---
+test> Simple Rank Correlation Matrix among all inputs and outputs:
+test>                      TF1u         TF2u      dussv_1 response_fn_1 
+test>      dussv_1 -4.91657e-002 -1.90656e-001 1.00000e+000 
+test> response_fn_1 6.13793e-001 6.70300e-001 7.00779e-002 1.00000e+000 
+test> Partial Rank Correlation Matrix between input and output:
+test>              response_fn_1 
+test>         TF1u 8.33695e-001 
+test>         TF2u 8.63904e-001 
+test>      dussv_1 4.97892e-001 
+DIFF test 5
+base< Simple Rank Correlation Matrix among all inputs and outputs:
+base<                      TF1u         TF2u      dussv_1 response_fn_1 
+base<      dussv_1 -8.89136e-04 -1.12587e-01  1.00000e+00 
+base< response_fn_1  6.63073e-01  6.32453e-01  9.28036e-02  1.00000e+00 
+base< Partial Rank Correlation Matrix between input and output:
+base<              response_fn_1 
+base<         TF1u  8.41676e-01 
+base<         TF2u  8.35009e-01 
+base<      dussv_1  3.69807e-01 
+---
+test> Simple Rank Correlation Matrix among all inputs and outputs:
+test>                      TF1u         TF2u      dussv_1 response_fn_1 
+test>      dussv_1 -3.28980e-002 -1.23701e-001 1.00000e+000 
+test> response_fn_1 6.63073e-001 6.32453e-001 4.15671e-002 1.00000e+000 
+test> Partial Rank Correlation Matrix between input and output:
+test>              response_fn_1 
+test>         TF1u 8.38082e-001 
+test>         TF2u 8.28737e-001 
+test>      dussv_1 3.15268e-001 
+dakota_uq_incremental.in
+PASS test 0
+PASS test 1
+dakota_uq_ishigami_adapt_gsg.in
+PASS test 0
+PASS test 1
+PASS test 2
+PASS test 3
+PASS test 4
+PASS test 5
+PASS test 6
+PASS test 7
+dakota_uq_monomials_sc.in
+PASS test 0
+PASS test 1
+PASS test 2
+PASS test 3
+PASS test 4
+PASS test 5
+PASS test 6
+PASS test 7
+dakota_uq_rosenbrock_adapt_sc.in
+PASS test 0
+PASS test 1
+PASS test 2
+PASS test 3
+PASS test 4
+PASS test 5
+dakota_uq_textbook_sop_lhs.in
+PASS test 0
+PASS test 1
+PASS test 2
+PASS test 3
+PASS test 4
+dakota_4level.in
+PASS test 0
+dakota_big_dataset.in
+PASS test 0
+dakota_coliny_p.in
+PASS test 0
+dakota_graphics1.in
+PASS test 0
+dakota_lib_mode.in
+PASS test 0
+PASS test 1
+PASS test 2
+PASS test 3
+dakota_lib_split.in
+PASS test 0
+dakota_multistart_ie.in
+PASS test 0
+dakota_mv.in
+PASS test 0
+PASS test 1
+PASS test 2
+PASS test 3
+PASS test 4
+dakota_ncsu_textbook.in
+PASS test 0
+dakota_nonlinear_cg.in
+PASS test 0
+dakota_rbdo_steel_column_analytic2_verify.in
+PASS test 0
+PASS test 1
+PASS test 2
+PASS test 3
+dakota_repartition.in
+PASS test 0
+PASS test 1
+dakota_resultsdb.in
+PASS test 0
+PASS test 1
+PASS test 2
+dakota_richardson.in
+PASS test 0
+PASS test 1
+PASS test 2
+dakota_textbook_increment.in
+PASS test 0
+PASS test 1
+DIFF test 2
+base< Simple Rank Correlation Matrix among all inputs and outputs:
+base<                      TF1n         TF2n         TF1u         TF2u         TF1e       biuv_1      hpiuv_1      hpiuv_2      dusiv_1      dusrv_1      dusrv_2 response_fn_1 
+base<       biuv_1 -8.23137e-03 -1.11457e-01  5.40601e-02  4.22692e-03  1.44828e-01  1.00000e+00 
+base<      hpiuv_1 -4.07119e-02  5.93993e-02 -1.29255e-01  1.09010e-02  1.58621e-01 -4.47164e-02  1.00000e+00 
+base<      hpiuv_2 -2.44716e-03  7.49722e-02 -2.33593e-02  5.13904e-02 -9.58843e-02  6.02892e-02 -2.24917e-01  1.00000e+00 
+base<      dusiv_1  1.75751e-02  7.76418e-02 -4.24917e-02 -5.36151e-02 -2.00222e-03 -9.58843e-02 -4.73860e-02  1.97998e-02  1.00000e+00 
+base<      dusrv_1 -2.20245e-02 -7.18576e-02 -1.16796e-01 -1.18576e-01 -4.02670e-02  7.27475e-02 -4.20467e-02 -5.13904e-02  3.75973e-02  1.00000e+00 
+base<      dusrv_2 -3.18131e-02  2.44716e-03 -7.40823e-02 -1.23915e-01 -6.69633e-02  4.87208e-02 -1.87097e-01  8.43159e-02 -3.91324e-01  2.89433e-01  1.00000e+00 
+base< response_fn_1 -6.00667e-03  8.87653e-02 -1.49055e-02 -6.20690e-02 -3.00334e-02 -9.27697e-02 -7.45273e-02  6.20690e-02  9.92881e-01  4.29366e-02 -3.68187e-01  1.00000e+00 
+base< Partial Rank Correlation Matrix between input and output:
+base<              response_fn_1 
+base<         TF1n -2.17286e-01 
+base<         TF2n  9.05828e-02 
+base<         TF1u  2.89052e-01 
+base<         TF2u -4.17050e-02 
+base<         TF1e -2.32957e-01 
+base<       biuv_1  1.96428e-02 
+base<      hpiuv_1 -8.52939e-02 
+base<      hpiuv_2  3.35599e-01 
+base<      dusiv_1  9.93705e-01 
+base<      dusrv_1  4.18619e-02 
+base<      dusrv_2  1.30852e-01 
+---
+test> Simple Rank Correlation Matrix among all inputs and outputs:
+test>                      TF1n         TF2n         TF1u         TF2u         TF1e       biuv_1      hpiuv_1      hpiuv_2      dusiv_1      dusrv_1      dusrv_2 response_fn_1 
+test>       biuv_1 -1.40156e-002 4.29366e-002 5.85095e-002 7.67519e-002 1.10122e-001 1.00000e+000 
+test>      hpiuv_1 1.13459e-002 2.03115e-001 1.93548e-002 7.58621e-002 2.12013e-001 1.45717e-001 1.00000e+000 
+test>      hpiuv_2 -2.44716e-003 9.27697e-002 5.89544e-002 2.29143e-002 -7.14127e-002 1.57286e-001 -5.09455e-002 1.00000e+000 
+test>      dusiv_1 8.23137e-003 7.80868e-002 -4.64961e-002 -5.09455e-002 -5.11680e-003 -1.04561e-002 2.86986e-002 2.33593e-002 1.00000e+000 
+test>      dusrv_1 8.12013e-002 1.40378e-001 2.42492e-002 -7.85317e-002 6.00667e-003 1.34594e-001 -2.89210e-003 1.82647e-001 1.62180e-001 1.00000e+000 
+test>      dusrv_2 1.69299e-001 3.42380e-001 7.63070e-002 2.86986e-002 7.45273e-002 2.77419e-001 1.48387e-001 2.82759e-001 1.66852e-002 3.16129e-001 1.00000e+000 
+test> response_fn_1 -6.00667e-003 8.87653e-002 -1.49055e-002 -6.20690e-002 -3.00334e-002 1.17909e-002 2.20245e-002 6.69633e-002 9.93326e-001 1.98665e-001 4.24917e-002 1.00000e+000 
+test> Partial Rank Correlation Matrix between input and output:
+test>              response_fn_1 
+test>         TF1n -1.71078e-001 
+test>         TF2n 2.06579e-002 
+test>         TF1u 3.00440e-001 
+test>         TF2u -8.74152e-002 
+test>         TF1e -2.69753e-001 
+test>       biuv_1 1.35174e-001 
+test>      hpiuv_1 -2.26027e-002 
+test>      hpiuv_2 3.00162e-001 
+test>      dusiv_1 9.95536e-001 
+test>      dusrv_1 2.75213e-001 
+test>      dusrv_2 6.22931e-002 
+DIFF test 3
+base< Simple Correlation Matrix among all inputs and outputs:
+base<                      TF1n         TF2n         TF1u         TF2u         TF1e       biuv_1      hpiuv_1      hpiuv_2      dusiv_1      dusrv_1      dusrv_2 response_fn_1 
+base<       biuv_1  3.07976e-02  2.36154e-03  4.75038e-02  2.18789e-03  7.56903e-03  1.00000e+00 
+base<      hpiuv_1  9.35287e-03  3.73872e-02 -3.31556e-02 -2.54068e-02  1.01078e-01 -6.56355e-02  1.00000e+00 
+base<      hpiuv_2  1.60788e-02  5.00360e-02  4.19106e-02  1.62414e-02  6.74884e-02  6.68882e-02 -1.44113e-01  1.00000e+00 
+base<      dusiv_1  6.01057e-03  2.57498e-03 -5.73842e-02 -1.42128e-02  4.27007e-02 -2.17881e-02 -5.07154e-02 -4.37049e-02  1.00000e+00 
+base<      dusrv_1 -5.72963e-02  5.64387e-02 -8.74278e-02 -1.26836e-01  1.05836e-01  1.18163e-01 -1.63663e-02  1.05576e-01  1.77743e-02  1.00000e+00 
+base<      dusrv_2  1.72914e-03  6.27480e-02  1.28711e-02 -1.17424e-02 -1.05999e-02  1.33978e-02 -8.16497e-02  5.04291e-02 -3.76445e-02  2.13809e-01  1.00000e+00 
+base< response_fn_1  4.80170e-02  6.66617e-02 -1.11024e-01 -3.50233e-02 -8.17212e-02 -1.52897e-02 -1.79897e-03 -5.94312e-02  8.82325e-01 -1.35670e-02 -4.36460e-02  1.00000e+00 
+base< Partial Correlation Matrix between input and output:
+base<              response_fn_1 
+base<         TF1n  1.13225e-01 
+base<         TF2n  1.41665e-01 
+base<         TF1u -1.23297e-01 
+base<         TF2u -3.65518e-02 
+base<         TF1e -2.59259e-01 
+base<       biuv_1  2.74891e-02 
+base<      hpiuv_1  1.08929e-01 
+base<      hpiuv_2 -1.07708e-02 
+base<      dusiv_1  8.94197e-01 
+base<      dusrv_1 -4.89358e-02 
+base<      dusrv_2 -1.33908e-02 
+base< Simple Rank Correlation Matrix among all inputs and outputs:
+base<                      TF1n         TF2n         TF1u         TF2u         TF1e       biuv_1      hpiuv_1      hpiuv_2      dusiv_1      dusrv_1      dusrv_2 response_fn_1 
+base<       biuv_1  7.32981e-02  3.72326e-03  1.16699e-01  2.78411e-02  6.00167e-03  1.00000e+00 
+base<      hpiuv_1 -3.88997e-03  5.97944e-02 -7.17977e-02 -5.31814e-02  1.14087e-01 -8.65240e-02  1.00000e+00 
+base<      hpiuv_2 -1.56154e-02 -7.22423e-04  1.37260e-02  1.53376e-02  4.27897e-03  1.23034e-01 -1.97166e-01  1.00000e+00 
+base<      dusiv_1  9.39150e-03  3.92331e-02 -5.26813e-02 -1.51153e-02 -2.87302e-02 -8.58572e-02 -8.28563e-02 -6.39622e-02  1.00000e+00 
+base<      dusrv_1 -7.57433e-02 -3.70103e-02 -8.93582e-02 -5.35704e-02 -5.04585e-02  1.21200e-01  5.91275e-02  1.30481e-01 -3.00083e-02  1.00000e+00 
+base<      dusrv_2  7.14643e-02  5.81273e-02 -4.32898e-02  2.48402e-02 -6.22395e-03  1.23368e-02  8.05224e-02  3.11198e-02 -5.89053e-03  9.00806e-02  1.00000e+00 
+base< response_fn_1  1.75604e-02  8.40789e-02 -4.72353e-02 -2.75076e-02 -1.55043e-02 -3.75104e-02 -7.65213e-02  3.15643e-02  9.77160e-01  9.44707e-03  4.10670e-02  1.00000e+00 
+base< Partial Rank Correlation Matrix between input and output:
+base<              response_fn_1 
+base<         TF1n  3.98361e-02 
+base<         TF2n  2.38972e-01 
+base<         TF1u  1.62281e-02 
+base<         TF2u -7.61223e-02 
+base<         TF1e  6.46837e-02 
+base<       biuv_1  1.86035e-01 
+base<      hpiuv_1  9.48063e-02 
+base<      hpiuv_2  4.47637e-01 
+base<      dusiv_1  9.84499e-01 
+base<      dusrv_1  1.15885e-01 
+base<      dusrv_2  2.10716e-01 
+---
+test> Simple Correlation Matrix among all inputs and outputs:
+test>                      TF1n         TF2n         TF1u         TF2u         TF1e       biuv_1      hpiuv_1      hpiuv_2      dusiv_1      dusrv_1      dusrv_2 response_fn_1 
+test>       biuv_1 1.85922e-002 2.52860e-002 1.87587e-002 -3.25148e-002 3.30728e-002 1.00000e+000 
+test>      hpiuv_1 9.35287e-003 3.73872e-002 -3.31556e-002 -2.54068e-002 1.01078e-001 -8.24226e-002 1.00000e+000 
+test>      hpiuv_2 3.61109e-003 5.19066e-002 6.01498e-002 1.05258e-002 5.80989e-002 9.50119e-002 -1.64677e-001 1.00000e+000 
+test>      dusiv_1 7.69095e-003 2.64861e-003 -6.03774e-002 -1.61482e-002 4.21493e-002 -1.62939e-002 -5.25107e-002 -2.86125e-002 1.00000e+000 
+test>      dusrv_1 -5.72963e-002 5.64387e-002 -8.74278e-002 -1.26836e-001 1.05836e-001 1.51083e-001 -1.63663e-002 8.75929e-002 1.55031e-002 1.00000e+000 
+test>      dusrv_2 1.72914e-003 6.27480e-002 1.28711e-002 -1.17424e-002 -1.05999e-002 2.69191e-002 -8.16497e-002 5.04219e-002 -3.90917e-002 2.13809e-001 1.00000e+000 
+test> response_fn_1 4.93224e-002 6.35235e-002 -1.09742e-001 -3.15019e-002 -7.98539e-002 -2.70184e-002 -3.59213e-003 -4.11144e-002 8.83252e-001 -1.67003e-002 -4.26224e-002 1.00000e+000 
+test> Partial Correlation Matrix between input and output:
+test>              response_fn_1 
+test>         TF1n 1.13561e-001 
+test>         TF2n 1.34043e-001 
+test>         TF1u -1.13337e-001 
+test>         TF2u -2.49822e-002 
+test>         TF1e -2.56467e-001 
+test>       biuv_1 -6.84029e-003 
+test>      hpiuv_1 1.08996e-001 
+test>      hpiuv_2 3.86041e-003 
+test>      dusiv_1 8.94438e-001 
+test>      dusrv_1 -4.73603e-002 
+test>      dusrv_2 -8.20108e-003 
+test> Simple Rank Correlation Matrix among all inputs and outputs:
+test>                      TF1n         TF2n         TF1u         TF2u         TF1e       biuv_1      hpiuv_1      hpiuv_2      dusiv_1      dusrv_1      dusrv_2 response_fn_1 
+test>       biuv_1 5.82384e-002 2.65074e-002 2.35065e-002 -5.26813e-002 -1.59489e-002 1.00000e+000 
+test>      hpiuv_1 -2.88969e-003 2.98416e-002 9.44707e-004 -3.78438e-002 1.78883e-001 -6.85190e-002 1.00000e+000 
+test>      hpiuv_2 -4.33454e-003 2.55627e-003 4.42345e-002 3.00083e-002 1.44485e-002 1.95610e-001 -4.82912e-002 1.00000e+000 
+test>      dusiv_1 1.10031e-002 3.81773e-002 -5.34593e-002 -7.94665e-003 -3.17866e-002 6.05724e-003 -6.45179e-002 -2.23395e-002 1.00000e+000 
+test>      dusrv_1 -9.44707e-003 7.04084e-002 -2.09503e-002 -1.65713e-001 8.76910e-002 1.96443e-001 -4.32898e-002 1.74993e-001 -2.43401e-002 1.00000e+000 
+test>      dusrv_2 -5.05696e-003 1.06974e-001 -5.69047e-002 -7.66324e-002 -5.72381e-002 5.71826e-002 -1.20478e-001 8.52459e-002 -2.05613e-003 1.73604e-001 1.00000e+000 
+test> response_fn_1 2.38400e-002 8.99694e-002 -5.01250e-002 -2.81189e-002 -1.47819e-002 6.84079e-002 -5.79605e-002 7.03529e-002 9.77883e-001 2.45068e-002 2.38400e-002 1.00000e+000 
+test> Partial Rank Correlation Matrix between input and output:
+test>              response_fn_1 
+test>         TF1n 7.16151e-002 
+test>         TF2n 2.73428e-001 
+test>         TF1u -1.87617e-002 
+test>         TF2u -9.40641e-002 
+test>         TF1e 7.27978e-002 
+test>       biuv_1 2.22637e-001 
+test>      hpiuv_1 5.30051e-002 
+test>      hpiuv_2 4.16497e-001 
+test>      dusiv_1 9.84884e-001 
+test>      dusrv_1 9.68759e-002 
+test>      dusrv_2 4.93082e-002 
+DIFF test 4
+base< Simple Rank Correlation Matrix among all inputs and outputs:
+base<                      TF1u         TF2u      dussv_1 response_fn_1 
+base<      dussv_1 -6.89655e-03 -1.55061e-01  1.00000e+00 
+base< response_fn_1  6.13793e-01  6.70300e-01  1.10122e-01  1.00000e+00 
+base< Partial Rank Correlation Matrix between input and output:
+base<              response_fn_1 
+base<         TF1u  8.26364e-01 
+base<         TF2u  8.59182e-01 
+base<      dussv_1  4.77046e-01 
+---
+test> Simple Rank Correlation Matrix among all inputs and outputs:
+test>                      TF1u         TF2u      dussv_1 response_fn_1 
+test>      dussv_1 -4.91657e-002 -1.90656e-001 1.00000e+000 
+test> response_fn_1 6.13793e-001 6.70300e-001 7.00779e-002 1.00000e+000 
+test> Partial Rank Correlation Matrix between input and output:
+test>              response_fn_1 
+test>         TF1u 8.33695e-001 
+test>         TF2u 8.63904e-001 
+test>      dussv_1 4.97892e-001 
+DIFF test 5
+base< Simple Rank Correlation Matrix among all inputs and outputs:
+base<                      TF1u         TF2u      dussv_1 response_fn_1 
+base<      dussv_1 -8.89136e-04 -1.12587e-01  1.00000e+00 
+base< response_fn_1  6.63073e-01  6.32453e-01  9.28036e-02  1.00000e+00 
+base< Partial Rank Correlation Matrix between input and output:
+base<              response_fn_1 
+base<         TF1u  8.41676e-01 
+base<         TF2u  8.35009e-01 
+base<      dussv_1  3.69807e-01 
+---
+test> Simple Rank Correlation Matrix among all inputs and outputs:
+test>                      TF1u         TF2u      dussv_1 response_fn_1 
+test>      dussv_1 -3.28980e-002 -1.23701e-001 1.00000e+000 
+test> response_fn_1 6.63073e-001 6.32453e-001 4.15671e-002 1.00000e+000 
+test> Partial Rank Correlation Matrix between input and output:
+test>              response_fn_1 
+test>         TF1u 8.38082e-001 
+test>         TF2u 8.28737e-001 
+test>      dussv_1 3.15268e-001 
+dakota_uq_incremental.in
+PASS test 0
+PASS test 1
+dakota_uq_ishigami_adapt_gsg.in
+PASS test 0
+PASS test 1
+PASS test 2
+PASS test 3
+PASS test 4
+PASS test 5
+PASS test 6
+PASS test 7
+dakota_uq_monomials_sc.in
+PASS test 0
+PASS test 1
+PASS test 2
+PASS test 3
+PASS test 4
+PASS test 5
+PASS test 6
+PASS test 7
+dakota_uq_rosenbrock_adapt_sc.in
+PASS test 0
+PASS test 1
+PASS test 2
+PASS test 3
+PASS test 4
+PASS test 5
+dakota_uq_textbook_sop_lhs.in
+PASS test 0
+PASS test 1
+PASS test 2
+PASS test 3
+PASS test 4
